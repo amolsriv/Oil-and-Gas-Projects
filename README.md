@@ -1,5 +1,7 @@
 # Oil-and-Gas-Projects
-README for Drilling Optimisation Notebook
+NOTE: Datasets are taken from kaggle.com and other public sources
+
+README for Oil and Gas Projects
 This repository contains the notebook Drilling optimisation.ipynb, which focuses on optimizing drilling performance metrics using advanced machine learning models. The notebook employs regression techniques to predict the rate of penetration (ROP) based on operational parameters from the dataset Time Interval Data Drilling.csv.
 
 Dataset Overview
