@@ -11,6 +11,10 @@ The Drilling optimisation.ipynb notebook focuses on improving the rate of penetr
 
 Key features include detailed data preprocessing, feature engineering (like deriving the Torque_Flow feature to capture non-linear effects), and the application of models such as Random Forest Regressor, XGBoost Regressor, and an ensemble Stacking Regressor. The notebook also integrates SHAP analysis to enhance the interpretability of the machine learning models, allowing users to understand the critical drivers of ROP. Evaluation metrics such as Mean Squared Error (MSE) and ￼ are used to assess model performance, with insights visualized through residual plots and dependence plots.
 
+**Production Optimisation**
+
+The Production Optimisation.ipynb implements a comprehensive workflow for optimizing and visualizing oil production trends using machine learning and interactive dashboards. It begins with training multiple models, including Linear Regression, Random Forest, and XGBoost, to predict oil production based on operational parameters, followed by evaluating and comparing their performance using metrics like R², MAE, and RMSE. Visualizations such as bar charts for model performance and scatter plots for actual vs. predicted values are included for insights. An interactive dashboard, built with Dash, allows users to explore time-series trends, model comparisons, and feature importance dynamically.
+
 **Anomaly Detection**
 
 The Anomaly Detection.ipynb notebook tackles the challenge of identifying unusual patterns in gas composition data collected during drilling operations. The dataset GAS Peaks-Drilling_Well.csv is used to analyze various gas components, such as Total Gas, methane (C1), ethane (C2), and propane (C3), across different depths.
