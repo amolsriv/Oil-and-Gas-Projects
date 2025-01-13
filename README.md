@@ -15,6 +15,10 @@ Key features include detailed data preprocessing, feature engineering (like deri
 
 The Production Optimisation.ipynb implements a comprehensive workflow for optimizing and visualizing oil production trends using machine learning and interactive dashboards. It begins with training multiple models, including Linear Regression, Random Forest, and XGBoost, to predict oil production based on operational parameters, followed by evaluating and comparing their performance using metrics like R², MAE, and RMSE. Visualizations such as bar charts for model performance and scatter plots for actual vs. predicted values are included for insights. An interactive dashboard, built with Dash, allows users to explore time-series trends, model comparisons, and feature importance dynamically.
 
+**ROP Optimisation**
+
+In ROP optimisation, the goal was to optimize the drilling parameters (WOB and SURF_RPM) to maximize the rate of penetration (ROP) using a machine learning model (GradientBoostingRegressor) encapsulated in a pipeline. First, the range of WOB and SURF_RPM was determined from the dataset, and constant values for the remaining features were set to their mean values. A prediction space was then plotted over the defined ranges of WOB and SURF_RPM, using the trained model to predict ROP values. An objective function was created to maximize ROP, which was then optimized using Particle Swarm Optimization (PSO). The optimization process identified the feature values (xopt) that led to the maximum ROP and the corresponding ROP value (fopt). The solution was visualized through a contour plot of the prediction space, and the optimization results were printed for further analysis.
+
 **Anomaly Detection**
 
 The Anomaly Detection.ipynb notebook tackles the challenge of identifying unusual patterns in gas composition data collected during drilling operations. The dataset GAS Peaks-Drilling_Well.csv is used to analyze various gas components, such as Total Gas, methane (C1), ethane (C2), and propane (C3), across different depths.
