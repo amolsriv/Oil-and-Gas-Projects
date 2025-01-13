@@ -1,65 +1,23 @@
 # Oil-and-Gas-Projects
 NOTE: Datasets are taken from kaggle.com and other public sources
 
-README for Oil and Gas Projects
-This repository contains the notebook Drilling optimisation.ipynb, which focuses on optimizing drilling performance metrics using advanced machine learning models. The notebook employs regression techniques to predict the rate of penetration (ROP) based on operational parameters from the dataset Time Interval Data Drilling.csv.
+**Oil and Gas Projects Repository**
 
-Dataset Overview
-	•	Dataset Name: Time Interval Data Drilling.csv
-	•	Key Features:
-	•	Weight on Bit
-	•	Top Drive RPM
-	•	Top Drive Torque (ft-lbs)
-	•	Flow In
-	•	Pump Pressure
-	•	SPM Total
-	•	Bit RPM
-	•	Depth Hole TVD
-	•	Differential Pressure
-	•	Downhole Torque
-	•	MUD TEMP
-	•	Target Variable: ROP Depth/Hour
+This repository is a collection of data science and machine learning projects tailored to solving critical challenges in the oil and gas industry. The projects encompass various aspects of exploration, production, and optimization, using state-of-the-art analytical techniques to extract actionable insights from industry datasets.
 
-Code contains
-	1.	Data Preprocessing:
-	•	Loading and cleaning the dataset.
-	•	Handling missing values (Time column).
-	•	Converting the Time column to a datetime format.
-	2.	Feature Engineering:
-	•	A new feature Torque_Flow was created by multiplying Top Drive Torque (ft-lbs) and Flow In to capture their combined impact on ROP.
-	3.	Machine Learning Models:
-	•	Random Forest Regressor
-	•	XGBoost Regressor
-	•	Stacking Regressor (ensemble model combining Random Forest and XGBoost)
-	4.	SHAP Analysis:
-	•	Used SHAP (SHapley Additive exPlanations) to interpret model predictions and understand feature importance.
-	5.	Evaluation Metrics:
-	•	Mean Squared Error (MSE)
-	•	￼ Score
-	6.	Visualizations:
-	•	Residual analysis for Random Forest.
-	•	SHAP summary and dependence plots for feature interpretability.
+**Drilling Optimization**
 
-Steps taken
-	1.	Modeling Enhancements:
-	•	Implemented ensemble learning using Stacking Regressor to improve predictive accuracy.
-	•	Conducted hyperparameter tuning for Random Forest and XGBoost models.
-	2.	Feature Engineering:
-	•	Created a derived feature (Torque_Flow) to capture non-linear interactions.
-	•	Identified key features using SHAP analysis.
-	3.	Interpretability:
-	•	Applied SHAP to generate insights on feature contributions to ROP predictions.
-	•	Visualized the dependence of key features like Depth Hole TVD on model predictions.
-	4.	Performance Improvement:
-	•	Compared the performance of Random Forest, XGBoost, and the ensemble model.
-	•	Demonstrated improved accuracy with the ensemble model.
+The Drilling optimisation.ipynb notebook focuses on improving the rate of penetration (ROP) in drilling operations by leveraging advanced machine learning models. Using the dataset Time Interval Data Drilling.csv, this project explores the relationship between operational parameters such as weight on bit, top drive RPM, torque, flow rate, and mud temperature with the ROP.
 
-Model Improvement
-	1.	Feature Engineering:
-	•	Added a meaningful derived feature to enhance model understanding of interactions.
-	2.	Model Interpretability:
-	•	Used SHAP to provide a transparent view of model decisions, helping identify critical factors affecting ROP.
-	3.	Ensemble Approach:
-	•	Combined the strengths of multiple models using Stacking Regressor, achieving better generalization.
-	4.	Visualization:
-	•	Added detailed residual analysis and SHAP dependence plots for deeper insights into model performance.
+Key features include detailed data preprocessing, feature engineering (like deriving the Torque_Flow feature to capture non-linear effects), and the application of models such as Random Forest Regressor, XGBoost Regressor, and an ensemble Stacking Regressor. The notebook also integrates SHAP analysis to enhance the interpretability of the machine learning models, allowing users to understand the critical drivers of ROP. Evaluation metrics such as Mean Squared Error (MSE) and ￼ are used to assess model performance, with insights visualized through residual plots and dependence plots.
+
+**Anomaly Detection**
+
+The Anomaly Detection.ipynb notebook tackles the challenge of identifying unusual patterns in gas composition data collected during drilling operations. The dataset GAS Peaks-Drilling_Well.csv is used to analyze various gas components, such as Total Gas, methane (C1), ethane (C2), and propane (C3), across different depths.
+
+This project applies multiple unsupervised learning methods, including Isolation Forest, Local Outlier Factor (LOF), Gaussian Mixture Models (GMM), and Autoencoders. These methods highlight potential anomalies in the data, which could indicate hydrocarbon-rich zones, operational inefficiencies, or safety concerns. Visualizations such as scatter plots and PCA projections help communicate these insights, while metrics like silhouette scores validate the clustering results. The notebook also provides a mechanism for comparing results across methods to ensure consistency in anomaly detection.
+
+**Exploratory Data Analysis**
+
+The Exploratory Data Analysis.ipynb notebook offers a deep dive into datasets related to oil production and petroleum operations. It provides insights into trends over time, regional production comparisons, and the identification of outliers in production data. By leveraging visualization tools and correlation analyses, this notebook helps uncover critical patterns that can guide strategic decisions in resource management and operational efficiency.
+
